@@ -1,0 +1,929 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body{
+  background: url('../img/memphis-colorful.png') repeat scroll 0 0 #fff;
+}
+
+.container{}
+a:hover{
+  text-decoration: none;
+}
+
+.active{
+  background:  #2eb82e;
+  color: white !important;
+}
+.navbar{
+  border: none;
+}
+.navbar-right{
+  margin-right: 0px;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+.headersection {}
+.main-navbar{
+  background: #d6d5d5;
+}
+
+.logo{}
+.logo img {
+	max-width: 200px;
+	margin-left: 20px;
+	margin-top: 5px;
+	max-height: 60px;
+}
+.navbar {
+	padding-bottom: 0px;
+}
+.navbar ul{}
+.navbar ul li {
+}
+.navbar ul li a {
+	color: #3b3b3b;
+	font-size: 16px;
+	line-height: 16px;
+}
+.navbar ul li a:hover{
+  background: #0c5c8b;
+  color: white;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}
+.bannersection img {
+	margin-top: 50px;
+	padding: 0px;
+	border: 3px solid #f5c99a;
+  border-top: 0px solid #f5c99a;
+}
+.bannersection img:hover{
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  box-shadow: 2px 3px 11px 0px;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  border-radius: 5px;
+}
+.counter {
+	margin-top: 5px;
+	padding-bottom: 0px;
+	border-bottom: 5px solid #F2F2F2;
+  background: #ffffff;
+}
+.same-counter {
+	border: 2px solid #D7D7D7;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+.same-counter:hover{
+  -moz-transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+  background: #fbfbfb;
+	border-radius: 10px;
+	/* box-shadow: 2px 1px -1px 3px; */
+	box-shadow: 2px 3px 11px 0px;
+	border-bottom: 5px solid #F2F2F2;
+  opacity: .8;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.same-counter img {
+	margin-top: -35px;
+}
+.same-counter:hover img{
+  margin-top: 0px;
+  border-radius: 100%;
+}
+.same-counter h2 {
+	font-size: 46px;
+	color: #ff871c;
+	margin-top: 0px;
+}
+.same-counter h4 {
+	font-size: 25px;
+	margin-bottom: 25px;
+}
+.same-counter:hover h4{
+  margin-bottom: 5px;
+}
+.maintitle{
+  background: #ffffff;
+}
+.covertitle{}
+.covertitle h2 {
+	font-size: 40px;
+	margin-top: 30px;
+	margin-bottom: 45px;
+	color: #38698F;
+}
+.covertitle h2:hover{
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  text-shadow: 2px 1px 0px #6A6363;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.service-section {
+	border-bottom: 5px solid #F2F2F2;
+	background: #f1f1f1;
+	padding: 25px 15px 0px 15px;
+	border-radius: 0px;
+}
+.seme-service {
+	background: #fbfbfb;
+	padding: 10px;
+	min-height: 190px;
+	border-top: 4px solid violet;
+	border-radius: 10px;
+	/* box-shadow: 2px 1px -1px 3px; */
+	box-shadow: 2px 3px 11px 0px;
+	margin-bottom: 30px;
+	border-bottom: 5px solid #F2F2F2;
+	min-height: 220px;
+}
+.seme-service:hover{
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  background: #ffffff;
+  border-top: 4px solid #0b5b8b;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.topicimg{}
+.topicimg img {
+	width: 100px;
+	border-radius: 100%;
+	margin-top: 45px;
+}
+.topicdetails{}
+.topicdetails h3{}
+.topicdetails p{}
+.for-whom {
+	margin: 10px auto;
+	background: #fbfbfb;
+	box-shadow: 2px 3px 11px 0px;
+	padding-bottom: 10px;
+}
+.person{}
+.person img {
+	width: 54%;
+	border-radius: 35%;
+	margin: 10px 0px;
+}
+.person-details {
+	margin-right: 40px;
+	margin-left: 40px;
+}
+.for-whom:hover .person-details{
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.person-details h2 {
+	font-size: 40px;
+	padding: 13px 0px;
+	background: #F2F2F2;
+	color: #358fd5;
+	line-height: 30px;
+	border-bottom: 3px solid #edd6b6;
+}
+.for-whom:hover .person-details h2{
+  color: #5f4167;
+  background: #d6d5d5;
+  border-bottom: 3px solid #e74864;
+}
+.person-details p {
+	font-size: 17px;
+	line-height: 26px;
+	text-align: justify;
+	background: #ffffff;
+	padding: 10px 15px;
+}
+.opinion {
+	padding-bottom: 30px;
+	background: #ffffff;
+	border: 3px solid #808080;
+	margin-bottom: 10px;
+	border-radius: 5px;
+  box-shadow: 2px 3px 11px 0px;
+}
+.opinion-title{}
+.quote1{}
+.quote1 img {}
+.opinion-headline{}
+.opinion-headline h2 {
+	font-size: 40px;
+	color: #eb4863;
+	margin-left: 20px;
+}
+.desc-opinion{}
+.desc-opinion p {
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 15px;
+	line-height: 30px;
+}
+.opinoin-by{}
+.opinoin-by-img{}
+.opinoin-by-img img {
+	margin-top: 0px;
+}
+.opinion-by-desc{}
+.opinion-by-desc a {
+	font-size: 25px;
+	color: #eb4863;
+	line-height: 30px;
+	margin-top: 20px;
+}
+.opinion-by-desc a:hover{
+  color: #0b5b8b;
+  font-size: 35px;
+}
+.opinion-by-desc h4 {
+	color: #5e4362;
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 17px;
+}
+.quote2{}
+.quote2 img {
+	margin-top: 10px;
+}
+.reader-section {
+	background: #f1f1f1;
+	margin-bottom: 10px;
+  border: 3px solid #808080;
+  border-radius: 5px;
+}
+.reader-head {
+	background: #d6d5d5;
+	padding: 2px;
+	margin-bottom: 50px;
+}
+.reader-section:hover .reader-head{
+  background: #0b5b8b;
+  color: white;
+  -webkit-transition: all 10ms ease-in-out;
+  -moz-transition: all 10ms ease-in-out;
+  -ms-transition: all 10ms ease-in-out;
+  -o-transition: all 10ms ease-in-out;
+  transition: all 10ms ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.reader-head h2 {
+	font-size: 35px;
+	font-weight: 500;
+	line-height: 40px;
+  margin: 10px auto;
+}
+.comments-area{}
+.same-comments {
+	margin-bottom: 100px;
+}
+.comments {
+	margin-left: 15px;
+	background: #ffffff;
+	padding: 13px 13px 20px 13px;
+	position: relative;
+	margin-right: 25px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+}
+.comments::after {
+	position: absolute;
+	content: '';
+	width: 30px;
+	height: 30px;
+	border-top: 0px solid #ffffff;
+	border-right: 2px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
+	border-left: 0px solid #ffffff;
+	top: 100%;
+	left: 50%;
+	margin-left: -29px;
+	transform: rotate(45deg);
+	margin-top: -15px;
+	background: #ffffff;
+}
+
+.same-comments:hover{}
+.comments p {
+	font-size: 16px;
+	line-height: 20px;
+}
+.commenter{}
+.commenter-img {
+  position: absolute;
+  top: -7px;
+  margin-left: 40px;
+}
+.commenter-img img{}
+.commenter-name{}
+.commenter-name h4 {
+	font-size: 20px;
+	line-height: 20px;
+	color: #ddb266;
+	margin-left: 22px;
+	margin-top: 5px;
+}
+.commenter-name p {
+	font-size: 14px;
+	line-height: 13px;
+	color: #878787;
+	margin-left: -10px;
+}
+
+.others-books {
+	border: 3px solid #d6d5d5;
+	margin-bottom: 10px;
+	background: #fefefe;
+  box-shadow: 2px 3px 11px 0px;
+
+}
+.others-books-head{}
+.others-books-head h2 {
+	font-size: 35px;
+	line-height: 40px;
+	color: #6a456f;
+	margin: 35px 0px;
+}
+.same-books {}
+.same-books img {
+	margin: 0 15px;
+	padding: 6px;
+	border: 4px solid #f6f1f1;
+	border-radius: 15px;
+}
+.same-books h3 {
+	color: #fd954e;
+	font-size: 23px;
+	font-weight: 500;
+	background: #f4f4f4;
+	padding: 8px 0px;
+	margin: 8px 20px 50px 20px;
+	border-radius: 5px;
+}
+.same-books h3:hover{
+  background: #0b5b8b;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.same-books h3:hover a{
+  color: white;
+}
+.same-books img:hover {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.jumbotron {
+	background: url('../img/banner-book.jpg');
+	min-height: 350px;
+	border-radius: 0px;
+	margin-bottom: 10px;
+}
+.where-sell {}
+.where-sell h3 {
+	color: #fdd368;
+	font-size: 35px;
+	margin-top: 15px;
+	line-height: 45px;
+}
+.where-sell p {
+	font-size: 14px;
+	margin: 35px 0px;
+	line-height: 20px;
+  color: white;
+}
+.where-sell a {
+	padding: 10px 20px;
+	margin: 5px 25px;
+	background-color: #045484;
+	border: 2px solid white;
+	color: white;
+	opacity: .85;
+}
+.facebook-comments {
+	border: 3px solid #d6d5d5;
+	background: #F6F6EF;
+  border-radius: 5px;
+  margin-top: -5px;
+}
+.hablu-comment {
+  background: #d6d5d5;
+  padding: 2px;
+	margin-bottom: 10px;
+}
+.hablu-comment{
+  background: #d6d5d5;
+	padding: 2px;
+	margin-bottom: 20px;
+}
+.facebook-comments:hover .hablu-comment{
+  background: #0b5b8b;
+  color: white;
+  -webkit-transition: all 10ms ease-in-out;
+  -moz-transition: all 10ms ease-in-out;
+  -ms-transition: all 10ms ease-in-out;
+  -o-transition: all 10ms ease-in-out;
+  transition: all 10ms ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.hablu-comment h2 {
+	font-size: 35px;
+	font-weight: 500;
+	line-height: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.facebook-like {
+	margin-left: 30px;
+	margin-top: 10px;
+}
+.facebook-comment{
+  margin: 20px 20px 0px 20px;
+}
+.footer-section {
+	background: #ECF6F8;
+	margin: 10px 0px;
+	border: 3px solid #d6d5d5;
+  box-shadow: 2px 3px 11px 0px;
+}
+.footer-section:hover{
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.social{}
+.social h2 {
+	font-size: 26px;
+	line-height: 26px;
+	margin-left: 90px;
+	color: #014260;
+}
+.social-details {
+	width: 250px;
+}
+.social i {
+	font-size: 20px;
+	color: #4267B2;
+	margin-right: 20px;
+}
+.social h4 {
+	font-size: 15px;
+	line-height: 15px;
+	background: white;
+	padding: 3px 0px 8px 35px;
+	border: 3px solid #d6d5d5;
+	border-radius: 5px;
+	margin-left: 25px;
+}
+.social h4:hover{
+  background: #0b5b8b;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.social h4:hover a{
+  color: white;;
+}
+.social h4:hover i{
+  color: white;
+}
+.activities{}
+.activities h2{
+  font-size: 26px;
+	line-height: 26px;
+	margin-left: 120px;
+	color: #014260;
+}
+.activities-details{
+  width: 310px;
+}
+.activities-details h4 {
+	font-size: 15px;
+	line-height: 18px;
+	background: white;
+	padding: 5px 0px 5px 10px;
+	border: 3px solid #d6d5d5;
+	border-radius: 5px;
+	margin-left: 35px;
+  text-align: center;
+}
+.activities-details h4:hover{
+  background: #0b5b8b;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.activities-details h4:hover a{
+  color: white;;
+}
+.footer-bottom {
+	background: #9cd1f9;
+	border: 3px solid #808080;
+	padding: 10px;
+	margin-top: 0px;
+  box-shadow: 2px 3px 11px 0px;
+  border-radius: 5px;
+}
+.foot-left {
+	margin-top: 15px;
+}
+.foot-left h4 {
+	font-size: 15px;
+	line-height: 10px;
+	font-weight: 500;
+	margin-top: 28px;
+}
+.foot-left p {
+	font-size: 13px;
+	margin-left: -5px;
+}
+.foot-right{}
+.foot-right span {
+	color: #0c5c8b;
+	font-size: 15px;
+}
+.foot-right span:hover{
+  color: #e74864;
+}
+.foot-right p {
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.foot-right i {
+	font-size: 25px;
+	margin-right: -15px;
+	color: #014260;
+	line-height: 0px;
+}
+.foot-right i:hover{
+  color: #e74864;
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.note {
+	font-size: 16px;
+	margin-bottom: 0px;
+	margin-left: 15px;
+	line-height: 10px;
+}
+.note:hover{
+  color: #e74864;
+}
+#scrollToUp {
+	width: 50px;
+	height: 50px;
+	background: #0b5b8b;
+	position: fixed;
+	bottom: 20px;
+	right: 5px;
+	text-align: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+#scrollToUp i {
+	font-size: 40px;
+	color: white;
+	padding: 5px;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
